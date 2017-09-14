@@ -10,9 +10,14 @@ Plug 'svermeulen/vim-easyclip' " https://github.com/svermeulen/vim-easyclip
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } " https://github.com/pangloss/vim-javascript
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " https://github.com/Shougo/deoplete.nvim
 Plug 'tomtom/tcomment_vim' " https://github.com/tomtom/tcomment_vim — commenting
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim' " https://github.com/junegunn/fzf.vim
+Plug 'tpope/vim-fugitive' " https://github.com/tpope/vim-fugitive
+Plug 'tpope/vim-rhubarb' " https://github.com/tpope/vim-rhubarb
 call plug#end()
 
-set cb=unnamed
+" Don't use this — disables block paste :-/
+" set cb=unnamed
 
 " neomake
 autocmd BufWritePost * Neomake
@@ -26,9 +31,6 @@ let g:neomake_python_enabled_makers = ['flake8']
 set nofoldenable
 
 autocmd FileType javascript set sw=2 sts=2 tw=120 expandtab colorcolumn=120 foldmethod=indent " omnifunc=javascriptcomplete#CompleteJS
-
-" YouCompleteMe
-let g:ycm_server_python_interpreter = '/usr/local/bin/python3'
 
 set t_Co=256
 syntax on
