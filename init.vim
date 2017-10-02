@@ -6,14 +6,17 @@ Plug 'vim-airline/vim-airline' " https://github.com/vim-airline/vim-airline — 
 Plug 'benekastah/neomake' " https://github.com/benekastah/neomake
 Plug 'chrisbra/csv.vim', { 'for': 'csv' } " https://github.com/chrisbra/csv.cim
 Plug 'tpope/vim-repeat' " https://github.com/tpope/vim-repeat
-Plug 'svermeulen/vim-easyclip' " https://github.com/svermeulen/vim-easyclip
+"Plug 'svermeulen/vim-easyclip' " https://github.com/svermeulen/vim-easyclip
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } " https://github.com/pangloss/vim-javascript
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " https://github.com/Shougo/deoplete.nvim
 Plug 'tomtom/tcomment_vim' " https://github.com/tomtom/tcomment_vim — commenting
+" Plug 'tpope/vim-commentary' " https://github.com/tpope/vim-commentary
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim' " https://github.com/junegunn/fzf.vim
 Plug 'tpope/vim-fugitive' " https://github.com/tpope/vim-fugitive
 Plug 'tpope/vim-rhubarb' " https://github.com/tpope/vim-rhubarb
+Plug 'elzr/vim-json' " https://github.com/elzr/vim-json
+Plug 'dahu/vim-fanfingtastic' " https://github.com/dahu/vim-fanfingtastic
 call plug#end()
 
 " Don't use this — disables block paste :-/
@@ -31,9 +34,13 @@ let g:neomake_python_enabled_makers = ['flake8']
 set nofoldenable
 
 autocmd FileType javascript set sw=2 sts=2 tw=120 expandtab colorcolumn=120 foldmethod=indent " omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType json set sw=2 sts=2 tw=120 expandtab colorcolumn=120 foldmethod=indent 
 
 set t_Co=256
 syntax on
 
 set hidden " Don't complain about unsaved buffers when just opening a new buffer
 let g:deoplete#enable_at_startup = 1
+
+" Don't like the auto-hiding on JSON files
+let g:vim_json_syntax_conceal = 0
