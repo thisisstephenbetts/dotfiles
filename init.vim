@@ -36,6 +36,10 @@ set nofoldenable
 autocmd FileType javascript set sw=2 sts=2 tw=120 expandtab colorcolumn=120 foldmethod=indent " omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType json set sw=2 sts=2 tw=120 expandtab colorcolumn=120 foldmethod=indent 
 
+set expandtab
+set sw=2
+set sts=2
+
 set t_Co=256
 syntax on
 
