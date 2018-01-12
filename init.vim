@@ -17,6 +17,7 @@ Plug 'tpope/vim-fugitive' " https://github.com/tpope/vim-fugitive
 Plug 'tpope/vim-rhubarb' " https://github.com/tpope/vim-rhubarb
 Plug 'elzr/vim-json' " https://github.com/elzr/vim-json
 Plug 'dahu/vim-fanfingtastic' " https://github.com/dahu/vim-fanfingtastic
+Plug 'moll/vim-node' " https://github.com/moll/vim-node
 call plug#end()
 
 " Don't use this — disables block paste :-/
