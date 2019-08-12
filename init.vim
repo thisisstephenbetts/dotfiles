@@ -8,7 +8,6 @@ Plug 'chrisbra/csv.vim', { 'for': 'csv' } " https://github.com/chrisbra/csv.cim
 Plug 'tpope/vim-repeat' " https://github.com/tpope/vim-repeat
 "Plug 'svermeulen/vim-easyclip' " https://github.com/svermeulen/vim-easyclip
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } " https://github.com/pangloss/vim-javascript
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " https://github.com/Shougo/deoplete.nvim
 Plug 'tomtom/tcomment_vim' " https://github.com/tomtom/tcomment_vim — commenting
 " Plug 'tpope/vim-commentary' " https://github.com/tpope/vim-commentary
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
