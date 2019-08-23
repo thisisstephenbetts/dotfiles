@@ -90,8 +90,6 @@ alias it_vi="osascript ~/dotfiles/iterm/it_vi.scpt"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 alias aws="~/Library/Python/2.7/bin/aws"
 
-source ~/.iterm2_shell_integration.`basename $SHELL`
-
 source /usr/local/share/chruby/chruby.sh
 chruby 2.6.3
 
